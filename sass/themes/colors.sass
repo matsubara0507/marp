@@ -21,14 +21,14 @@ $purple: #454D71
 $pink: #FF3F80
 $blue: #01BBD4
 
-=color-template($bg, $text, $code, $codebg)
+=color-template($bg, $text, $mark, $code, $codebg)
   color: $text
 
   > .slide
     background-color: $bg
 
   mark
-    color: $text
+    color: $mark
 
   a
     color: $text
@@ -168,43 +168,43 @@ $blue: #01BBD4
         border-width: 1px
         border-style: solid
 
-    +color-template($white, $black, $white, $black)
+    +color-template($white, $black, $black, $white, $black)
 
     &[data-template~="invert"]
-      +color-template($black, $white, $black, $white)
+      +color-template($black, $white, $white, $black, $white)
 
     &[data-template~="green"]
-      +color-template($white, $green, $white, $black)
+      +color-template($white, $black, $green, $white, $black)
 
     &[data-template~="invert-green"]
-      +color-template($green, $white, $black, $white)
+      +color-template($green, $white, $black, $black, $white)
 
     &[data-template~="blue"]
-      +color-template($white, $blue, $white, $black)
+      +color-template($white, $black, $blue, $white, $black)
 
     &[data-template~="invert-blue"]
-      +color-template($blue, $white, $black, $white)
+      +color-template($blue, $white, $black, $black, $white)
 
     &[data-template~="pink"]
-      +color-template($white, $pink, $black, $white)
+      +color-template($white, $black, $pink, $black, $white)
 
     &[data-template~="invert-pink"]
-      +color-template($pink, $white, $black, $white)
+      +color-template($pink, $white, $black, $black, $white)
 
     &[data-template~="red"]
-      +color-template($white, $red, $black, $white)
+      +color-template($white, $black, $red, $black, $white)
 
     &[data-template~="invert-red"]
-      +color-template($red, $white, $black, $white)
+      +color-template($red, $white, $black, $black, $white)
 
     &[data-template~="purple"]
-      +color-template($white, $purple, $black, $white)
+      +color-template($white, $black, $purple, $black, $white)
 
     &[data-template~="invert-purple"]
-      +color-template($purple, $white, $black, $white)
+      +color-template($purple, $white, $black, $black, $white)
 
     &[data-template~="orange"]
-      +color-template($white, $orange, $black, $white)
+      +color-template($white, $black, $orange, $black, $white)
 
     &[data-template~="invert-orange"]
-      +color-template($orange, $white, $black, $white)
+      +color-template($orange, $white, $black, $black, $white)
